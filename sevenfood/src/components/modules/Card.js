@@ -4,6 +4,7 @@ import Location from "../icons/Location";
 import Dollar from "../icons/Dollar";
 
 function Card(props) {
+  console.log(props);
   const { id, name, price, details, discount } = props;
 
   return (
@@ -13,7 +14,7 @@ function Card(props) {
         <h4>{name}</h4>
         <div>
           <Location />
-          {details[0].Cuisine}
+          {/* {details[0].Cuisine} */}
         </div>
       </div>
       <div className={styles.price}>
