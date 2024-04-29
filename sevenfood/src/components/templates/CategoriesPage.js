@@ -4,7 +4,6 @@ import Card from "../modules/Card";
 import styles from "./CategoriesPage.module.css";
 
 function CategoriesPage({ data }) {
-  console.log(data);
   const router = useRouter();
 
   const [query, setQuery] = useState({ difficulty: "", time: "" });
@@ -49,14 +48,14 @@ function CategoriesPage({ data }) {
           </select>
           <button onClick={searchHandler}>Search</button>
         </div>
-        {/* <div className={styles.cards}>
+        <div className={styles.cards}>
           {!data.length ? (
             <img src="/images/search.png" alt="Category" />
           ) : null}
           {data.map((food) => (
             <Card key={food.id} {...food} />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -13,7 +13,8 @@ function DetailsPage(props) {
     ingredients,
     recipe,
   } = props;
-  console.log(details);
+
+  console.log(discount);
 
   return (
     <div className={styles.container}>
